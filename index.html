@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="public/logo.jpg">
+    <title>Torri's Night</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    <script src="https://kit.fontawesome.com/11d685a339.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+
+      <!-- menu in alto che si apre a destra su desktop e in basso su mobile-->
+      <nav class="navbar">
+        <a href="#" class="toggleButton">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbarList">
+          <a href="#quando">Quando</a>
+          <a href="#dove">Dove</a>
+          <a href="#info">More Info</a>
+        </div> 
+      </nav>
+
+      <!--scritta principale-->
+      <div id="main">
+        <div class="tema">Tema COACHELLA</div>
+        <div class="feat">
+          <div>Featuring:</div>
+          <div>MIKETOUCH DJ</div>
+        </div>
+        
+        <div class="mainText">
+          <div class="css-3d-text">Torri's Night</div>
+          <div class="css-3d-text-2">is back</div>
+        </div>
+        <script>
+          var end = new Date('06/10/2022 10:0 PM');
+          
+              var _second = 1000;
+              var _minute = _second * 60;
+              var _hour = _minute * 60;
+              var _day = _hour * 24;
+              var timer;
+          
+              function showRemaining() {
+                  var now = new Date();
+                  var distance = end - now;
+                  if (distance < 0) {
+          
+                      clearInterval(timer);
+                      document.getElementById('countdown').innerHTML = 'EXPIRED!';
+          
+                      return;
+                  }
+                  var days = Math.floor(distance / _day);
+                  var hours = Math.floor((distance % _day) / _hour);
+                  var minutes = Math.floor((distance % _hour) / _minute);
+                  var seconds = Math.floor((distance % _minute) / _second);
+          
+                  document.getElementById('countdown').innerHTML = days + 'days ';
+                  document.getElementById('countdown').innerHTML += hours + 'hrs ';
+                  document.getElementById('countdown').innerHTML += minutes + 'mins ';
+                  document.getElementById('countdown').innerHTML += seconds + 'secs';
+              }
+          
+              timer = setInterval(showRemaining, 1000);
+        </script>
+        <div id="countdown"></div>
+      </div>
+
+      <!--data e ora-->
+      <div id="quando">
+        <div class="rettangoloData">
+          <p>10/06/2022 22:00</p>
+        </div>
+      </div>
+
+      <!--luogo con mappa-->
+      <div id="dove">
+        <div class="dove1">
+          <p>CHEOPE Disco Club</p>
+        </div>
+        <div class="dove2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444837.9862723444!2d10.198134548796181!3d44.98534324773443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47829d6abcac06cf%3A0xcb1ae68736e1cf6!2sCheope%20Discoteca!5e0!3m2!1sit!2sit!4v1654296532911!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!--info-->
+      <div id="info">
+        <div class="shuttle">
+          <div class="css-3d-text-3">+16</div>
+          <i class="fa-solid fa-van-shuttle fa-6x"></i>
+        </div>
+        <div class="informazioni">
+          <p>Dopo 2 anni torna la Torri's Night, la più grande festa della nostra scuola. Si tratta di una festa +16 e per la quale è necessario farsi mettre in lista entro l'8 giugno. Il costo è di 15€ comprensivo di drink e per chi volesse è disponibile anche un servizio di Shuttle al costo aggiuntivo di 4 euro. Per tutti i minorenni inoltre è obbligatorio consegnare anche la liberatoria firmata dai genitori. Per ulteriori informazioni potete contattare gli organizzatori.</p>
+        </div>
+      </div>
+      <div class="liberatoria">
+        <a href="public/Dichiarazione liberatoria di responsabilita_[3962].pdf" download="liberatoriaTorrisNight">Clicca qui per scaricare la liberatoria</a>
+      </div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/torris_night_/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+        <a href="https://it-it.facebook.com/"><i class="fa-brands fa-facebook fa-3x"></i></a>
+        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-3x"></i></a>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <div class="footerDiv">
+          <p class="footerText">Powered by: <em>Leoddi</em></p>
+          <div class="footerText copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p style="margin-left: 5px;">Copyright 2022</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

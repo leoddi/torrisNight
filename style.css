@@ -1,0 +1,449 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    cursor: default;
+}
+.bg-image {
+    background-image: url('public/bg2.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+  z-index: -1;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0px;
+}
+.mainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.css-3d-text {
+    font-size: 87px;
+    color: #339e35;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(18,125,20),
+                 1px 1px 0 rgb(10,117,12),
+                 2px 2px 0 rgb(1,108,3),
+                 3px 3px 0 rgb(-7,100,0),
+                 4px 4px 0 rgb(-15,92,0),
+                 5px 5px 0 rgb(-23,84,0),
+                 6px 6px 0 rgb(-32,75,0),
+                 7px 7px 0 rgb(-40,67,0),
+                 8px 8px  0 rgb(-48,59,0),
+                 9px 9px 8px rgba(0,0,0,0),
+                 9px 9px 1px rgba(0,0,0,0.5),
+                 0px 0px 8px rgba(0,0,0,.2);
+}
+.css-3d-text-2 {
+    font-size: 4.625rem;
+    color: #339e35;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(18,125,20),
+                 1px 1px 0 rgb(10,117,12),
+                 2px 2px 0 rgb(1,108,3),
+                 3px 3px 0 rgb(-7,100,0),
+                 4px 4px 0 rgb(-15,92,0),
+                 5px 5px 0 rgb(-23,84,0),
+                 6px 6px 0 rgb(-32,75,0),
+                 7px 7px 0 rgb(-40,67,0),
+                 8px 8px  0 rgb(-48,59,0),
+                 9px 9px 8px rgba(0,0,0,0),
+                 9px 9px 1px rgba(0,0,0,0.5),
+                 0px 0px 8px rgba(0,0,0,.2);
+}
+#countdown {
+    margin-top: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(219,219,219),
+                 1px 1px  0 rgb(183,183,183),
+                 2px 2px 1px rgba(0,0,0,0.6),
+                 2px 2px 1px rgba(0,0,0,0.5),
+                 0px 0px 1px rgba(0,0,0,.2);
+}
+.tema {
+    position: absolute;
+    top:60px;
+    left: 30px;
+    background-image: linear-gradient(to left, violet, rgb(96, 51, 129), rgb(105, 105, 214));   -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.75rem;
+    font-weight: 500
+}
+.feat {
+    position: absolute;
+    top:60px;
+    right: 30px;
+    background-image: linear-gradient(to left, violet, rgb(96, 51, 129), rgb(105, 105, 214));   -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.75rem;
+    font-weight: 500
+}
+
+
+.navbar {
+    background-color: #040303;
+    padding: .5rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    
+}
+.navbarList {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.60rem;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: plum;
+}
+.toggleButton {
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggleButton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+#quando {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rettangoloData {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    border-width: 10px;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+
+
+#dove {
+    margin: 300px 0px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dove1 {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    margin-right: 15px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    border-width: 10px;
+    width: 33%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.dove2 {
+    margin-left: 15px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    border-width: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+#info {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.shuttle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 20px;
+}
+.css-3d-text-3 {
+    margin-bottom: 25px;
+    font-size: 75px;
+    color: #ffffff;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(219,219,219),
+                 1px 1px  0 rgb(183,183,183),
+                 2px 2px 1px rgba(0,0,0,0.6),
+                 2px 2px 1px rgba(0,0,0,0.5),
+                 0px 0px 1px rgba(0,0,0,.2);
+ }
+.informazioni {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    border-width: 10px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.informazioni p {
+    margin: 40px;
+}
+.liberatoria {
+    margin: 30px 0;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a {
+    margin: 25px;
+}
+
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.footerDiv {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.footerText {
+    color: aliceblue;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+}
+@media (max-width:1440px){
+    .rettangoloData {
+        border-width: 5px;
+        width: 60%;
+        height: 25%;
+        font-size: 2.80rem;
+    }
+    #dove {
+        margin: 15% 0px;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dove1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-width: 5px;
+        width: 60%;
+        height: 25%;
+        font-size: 2.85rem;
+    }
+    .dove2 {
+        margin-left: 0;
+    }
+    iframe {
+        width: 500px;
+        height: 400px;
+    }
+    .tema, .feat {
+        font-size: 1.5rem;
+    }
+    i {
+        color: black;
+    }
+}
+@media (max-width:1200px){
+    .shuttle {
+        display: none;
+    }
+    .informazioni {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .informazioni p {
+        margin: 20px;
+    }
+    .liberatoria {
+        font-size: 1.8rem;
+    }
+    .tema, .feat {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:1000px){
+    i {
+        color: white;
+    }
+}
+@media (max-width:600px){
+    .toggleButton {
+        display: flex;
+    }
+    .navbarList {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 2rem;
+        margin-left: .5rem;
+    }
+    .navbarList a {
+        padding: .5rem
+    }
+    .navbarList.active {
+        display: flex;
+    }
+    #main {
+        margin: 50% 0px;
+    }
+    .css-3d-text {
+        font-size: 50px;
+        color: #339e35;
+        font-family: "Arial Black", Gadget, sans-serif;
+        text-shadow: 0px 0px 0 rgb(13,120,15),
+                     1px 1px 0 rgb(0,107,2),
+                     2px 2px 0 rgb(-14,93,0),
+                     3px 3px 0 rgb(-27,80,0),
+                     4px 4px 0 rgb(-40,67,0),
+                     5px 5px  0 rgb(-53,54,0),
+                     6px 6px 5px rgba(0,0,0,0),
+                     6px 6px 1px rgba(0,0,0,0.5),
+                     0px 0px 5px rgba(0,0,0,.2);
+     }
+     .css-3d-text-2 {
+        font-size: 37px;
+        color: #339e35;
+        font-family: "Arial Black", Gadget, sans-serif;
+        text-shadow: 0px 0px 0 rgb(13,120,15),
+                     1px 1px 0 rgb(0,107,2),
+                     2px 2px 0 rgb(-14,93,0),
+                     3px 3px 0 rgb(-27,80,0),
+                     4px 4px 0 rgb(-40,67,0),
+                     5px 5px  0 rgb(-53,54,0),
+                     6px 6px 5px rgba(0,0,0,0),
+                     6px 6px 1px rgba(0,0,0,0.5),
+                     0px 0px 5px rgba(0,0,0,.2);
+     }
+     #countdown {
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Arial Black", Gadget, sans-serif;
+        text-shadow: 0px 0px 0 rgb(219,219,219),
+                     1px 1px  0 rgb(183,183,183),
+                     2px 2px 1px rgba(0,0,0,0.6),
+                     2px 2px 1px rgba(0,0,0,0.5),
+                     0px 0px 1px rgba(0,0,0,.2);
+    }
+    .tema, .feat {
+        font-size: 1rem;
+    }
+    .tema {
+        left: 15px;
+    }
+    .feat {
+        right: 15px;
+    }
+    .tema.active {
+        display: none;
+    }
+    .feat.active {
+        display: none;
+    }
+    #quando {
+        height: 300px;
+    }
+    .rettangoloData {
+        width: 80%;
+        height: 25%;
+        font-size: 2rem;
+    }
+    .dove1 {
+        width: 80%;
+        height: 15%;
+        font-size: 2rem;
+    }
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+    .informazioni {
+        font-size: 1rem;
+    }
+    .liberatoria {
+        font-size: 1rem;
+    }
+    footer {
+        position: relative;
+    }
+    .footerDiv {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
