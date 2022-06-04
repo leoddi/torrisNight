@@ -93,7 +93,7 @@ body {
 
 .navbar {
     background-color: #040303;
-    padding: .5rem;
+    padding: 1rem;
 }
 a {
     text-decoration: none;
@@ -344,7 +344,6 @@ footer {
         flex-direction: column;
         text-align: left;
         margin-top: 2rem;
-        margin-left: .5rem;
     }
     .navbarList a {
         padding: .5rem
