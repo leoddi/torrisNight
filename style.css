@@ -27,49 +27,33 @@ body {
     align-items: center;
 }
 .css-3d-text {
-    font-size: 87px;
+    font-size: 120px;
+    font-weight: 900;
     color: #339e35;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 0px 0px 0 rgb(18,125,20),
-                 1px 1px 0 rgb(10,117,12),
-                 2px 2px 0 rgb(1,108,3),
-                 3px 3px 0 rgb(-7,100,0),
-                 4px 4px 0 rgb(-15,92,0),
-                 5px 5px 0 rgb(-23,84,0),
-                 6px 6px 0 rgb(-32,75,0),
-                 7px 7px 0 rgb(-40,67,0),
-                 8px 8px  0 rgb(-48,59,0),
-                 9px 9px 8px rgba(0,0,0,0),
-                 9px 9px 1px rgba(0,0,0,0.5),
-                 0px 0px 8px rgba(0,0,0,.2);
+
+}
+.css-3d-text.active {
+    font-size: 120px;
+    font-weight: 900;
+    color: #339e35;
+    text-shadow: 0 0 10px #39FF14;
 }
 .css-3d-text-2 {
-    font-size: 4.625rem;
+    font-size: 100px;
+    font-weight: 900;
     color: #339e35;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 0px 0px 0 rgb(18,125,20),
-                 1px 1px 0 rgb(10,117,12),
-                 2px 2px 0 rgb(1,108,3),
-                 3px 3px 0 rgb(-7,100,0),
-                 4px 4px 0 rgb(-15,92,0),
-                 5px 5px 0 rgb(-23,84,0),
-                 6px 6px 0 rgb(-32,75,0),
-                 7px 7px 0 rgb(-40,67,0),
-                 8px 8px  0 rgb(-48,59,0),
-                 9px 9px 8px rgba(0,0,0,0),
-                 9px 9px 1px rgba(0,0,0,0.5),
-                 0px 0px 8px rgba(0,0,0,.2);
+}
+.css-3d-text-2.active {
+    font-size: 100px;
+    font-weight: 900;
+    color: #339e35;
+    text-shadow: 0 0 10px #39FF14;
 }
 #countdown {
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 50px;
     color: #ffffff;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 0px 0px 0 rgb(219,219,219),
-                 1px 1px  0 rgb(183,183,183),
-                 2px 2px 1px rgba(0,0,0,0.6),
-                 2px 2px 1px rgba(0,0,0,0.5),
-                 0px 0px 1px rgba(0,0,0,.2);
+    font-weight: 700;
 }
 .tema {
     position: absolute;
@@ -89,6 +73,40 @@ body {
     font-size: 1.75rem;
     font-weight: 500
 }
+.center input {
+    margin-top: 20px;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background-color: white;
+    border-radius: 20px;
+    outline: none;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+.center input:checked {
+    background: #39be22;
+    box-shadow: 0 0 10px #39FF14;
+}
+.center input::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: white;
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+}
+.center input:checked::before {
+    left: 40px;
+}
+
 
 
 .navbar {
@@ -140,6 +158,7 @@ a {
     background-color: rgba(0,0,0, 0.4);
     border-style: solid;
     border-color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border-radius: 20px;
     border-width: 10px;
     width: 40%;
@@ -168,6 +187,7 @@ a {
     margin-right: 15px;
     border-style: solid;
     border-color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border-radius: 20px;
     border-width: 10px;
     width: 33%;
@@ -183,10 +203,11 @@ a {
     margin-left: 15px;
     border-style: solid;
     border-color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border-radius: 20px;
     border-width: 10px;
     width: auto;
-    height: auto;
+    height: 450px;
 }
 
 
@@ -201,6 +222,7 @@ a {
 .shuttle {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     color: white;
     margin: 20px;
@@ -209,18 +231,14 @@ a {
     margin-bottom: 25px;
     font-size: 75px;
     color: #ffffff;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 0px 0px 0 rgb(219,219,219),
-                 1px 1px  0 rgb(183,183,183),
-                 2px 2px 1px rgba(0,0,0,0.6),
-                 2px 2px 1px rgba(0,0,0,0.5),
-                 0px 0px 1px rgba(0,0,0,.2);
+    font-weight: 800;
  }
 .informazioni {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4);
     border-style: solid;
     border-color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border-radius: 20px;
     border-width: 10px;
     width: 50%;
@@ -248,9 +266,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0px;
 }
 .social a {
     margin: 25px;
+}
+.social i:hover {
+    color: aliceblue;
 }
 
 
@@ -300,6 +322,7 @@ footer {
     }
     .dove2 {
         margin-left: 0;
+        height: 400px;
     }
     iframe {
         width: 500px;
@@ -331,8 +354,62 @@ footer {
     }
 }
 @media (max-width:1000px){
+    #countdown {
+        margin-top: 20px;
+        font-size: 35px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    .css-3d-text {
+        font-size: 100px;
+        font-weight: 900;
+        color: #339e35;
+    
+    }
+    .css-3d-text.active {
+        font-size: 100px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 10px #39FF14;
+    }
+    .css-3d-text-2 {
+        font-size: 80px;
+        font-weight: 900;
+        color: #339e35;
+    }
+    .css-3d-text-2.active {
+        font-size: 80px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 10px #39FF14;
+    }
     i {
         color: white;
+    }
+}
+@media (max-width:700px){
+    .css-3d-text {
+        font-size: 80px;
+        font-weight: 900;
+        color: #339e35;
+    
+    }
+    .css-3d-text.active {
+        font-size: 80px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 10px #39FF14;
+    }
+    .css-3d-text-2 {
+        font-size: 65px;
+        font-weight: 900;
+        color: #339e35;
+    }
+    .css-3d-text-2.active {
+        font-size: 65px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 10px #39FF14;
     }
 }
 @media (max-width:600px){
@@ -354,43 +431,34 @@ footer {
     #main {
         margin: 50% 0px;
     }
-    .css-3d-text {
-        font-size: 50px;
-        color: #339e35;
-        font-family: "Arial Black", Gadget, sans-serif;
-        text-shadow: 0px 0px 0 rgb(13,120,15),
-                     1px 1px 0 rgb(0,107,2),
-                     2px 2px 0 rgb(-14,93,0),
-                     3px 3px 0 rgb(-27,80,0),
-                     4px 4px 0 rgb(-40,67,0),
-                     5px 5px  0 rgb(-53,54,0),
-                     6px 6px 5px rgba(0,0,0,0),
-                     6px 6px 1px rgba(0,0,0,0.5),
-                     0px 0px 5px rgba(0,0,0,.2);
-     }
-     .css-3d-text-2 {
-        font-size: 37px;
-        color: #339e35;
-        font-family: "Arial Black", Gadget, sans-serif;
-        text-shadow: 0px 0px 0 rgb(13,120,15),
-                     1px 1px 0 rgb(0,107,2),
-                     2px 2px 0 rgb(-14,93,0),
-                     3px 3px 0 rgb(-27,80,0),
-                     4px 4px 0 rgb(-40,67,0),
-                     5px 5px  0 rgb(-53,54,0),
-                     6px 6px 5px rgba(0,0,0,0),
-                     6px 6px 1px rgba(0,0,0,0.5),
-                     0px 0px 5px rgba(0,0,0,.2);
-     }
      #countdown {
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 25px;
         color: #ffffff;
-        font-family: "Arial Black", Gadget, sans-serif;
-        text-shadow: 0px 0px 0 rgb(219,219,219),
-                     1px 1px  0 rgb(183,183,183),
-                     2px 2px 1px rgba(0,0,0,0.6),
-                     2px 2px 1px rgba(0,0,0,0.5),
-                     0px 0px 1px rgba(0,0,0,.2);
+        font-weight: 700;
+    }
+    .css-3d-text {
+        font-size: 60px;
+        font-weight: 900;
+        color: #339e35;
+    
+    }
+    .css-3d-text.active {
+        font-size: 60px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 8px #39FF14;
+    }
+    .css-3d-text-2 {
+        font-size: 45px;
+        font-weight: 900;
+        color: #339e35;
+    }
+    .css-3d-text-2.active {
+        font-size: 45px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 8px #39FF14;
     }
     .tema, .feat {
         font-size: 1rem;
@@ -420,6 +488,9 @@ footer {
         height: 15%;
         font-size: 2rem;
     }
+    .dove2 {
+        height: 300px;
+    }
     iframe {
         width: 300px;
         height: 300px;
@@ -437,5 +508,30 @@ footer {
         width: auto;
         display: flex;
         flex-direction: column;
+    }
+}
+@media (max-width:400px){
+    .css-3d-text {
+        font-size: 50px;
+        font-weight: 900;
+        color: #339e35;
+    
+    }
+    .css-3d-text.active {
+        font-size: 50px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 5px #39FF14;
+    }
+    .css-3d-text-2 {
+        font-size: 37px;
+        font-weight: 900;
+        color: #339e35;
+    }
+    .css-3d-text-2.active {
+        font-size: 37px;
+        font-weight: 900;
+        color: #339e35;
+        text-shadow: 0 0 5px #39FF14;
     }
 }
